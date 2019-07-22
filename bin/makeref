@@ -1,0 +1,24 @@
+#!/bin/bash
+PWD_PATH=`pwd`
+PWD_FOLDER=`basename $PWD_PATH`
+KERNEL_STRING="kernel"
+LINUX_STRING="linux"
+
+# find all source files
+echo "finding source files under current dir"
+find . -name "*.h" -o -name "*.c" -o -name "*.cpp" -o -name "*.m" -o -name "*.mm" -o -name "*.java" -o -name "*.py" > src.files
+
+# make ctags
+echo "making ctags"
+ctags -R --c++-kinds=+px --fields=+iaS --extra=+q -L src.files
+
+# make cscope database
+echo current working dir: $PWD_FOLDER
+if [[ $PWD_FOLDER =~ $KERNEL_STRING ]] || [[ $PWD_FOLDER =~ $LINUX_STRING ]]
+then
+    echo "kernel source tree, making cscope database"
+    cscope -Rbkq
+else
+    echo "non-kernel souce tree, making cscope database"
+    cscope -Rbq
+fi
