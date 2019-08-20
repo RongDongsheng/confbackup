@@ -8,5 +8,6 @@ source ~/.vim_runtime/vimrcs/cscope_maps.vim
 source ~/.vim_runtime/vimrcs/taglist.vim
 source ~/.vim_runtime/vimrcs/gitblame.vim
 source ~/.vim_runtime/vimrcs/linuxsty.vim
+source ~/.vim_runtime/vimrcs/NERD_commenter.vim
 
 source ~/.vim_runtime/my_configs.vim

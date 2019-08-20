@@ -7,8 +7,12 @@ nnoremap <F3> :TlistToggle<CR>
 
 syntax enable
 set background=dark
+" solarized options
+let g:solarized_visibility = "high"
+let g:solarized_contrast = "high"
 colorscheme solarized
 " let g:solarized_bold=0
+
 " relative line number
 set relativenumber
 set nu
@@ -41,3 +45,6 @@ command! -nargs=0 GitBlame call gitblame#echo()
 nnoremap <Leader>s :<C-u>call gitblame#echo()<CR>
 
 nnoremap <C-]> g<C-]>
+
+" Add spaces after comment delimiters by default
+let g:NERDSpaceDelims = 1
