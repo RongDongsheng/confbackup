@@ -1,0 +1,13 @@
+[user]
+	name = rongdongsheng
+	email = rongdongsheng@baidu.com
+
+	[alias]
+	d = difftool
+	[diff]
+	tool = vimdiff
+	[difftool]
+	prompt = false
+	trustExitCode = true
+[core]
+	editor = vim
