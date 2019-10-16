@@ -5,6 +5,10 @@ set tags=tags;
 " map TlistToggle
 nnoremap <F3> :TlistToggle<CR>
 
+" map Arrow keys to page up down
+nnoremap <Up> <C-y>
+nnoremap <Down> <C-e>
+
 syntax enable
 set background=dark
 " solarized options
