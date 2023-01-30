@@ -1,13 +1,17 @@
 [user]
-	name = rongdongsheng
-	email = rongdongsheng@baidu.com
+	name = xxxx
+	email = xxxx
 
-	[alias]
+[alias]
 	d = difftool
-	[diff]
+[diff]
 	tool = vimdiff
-	[difftool]
+[difftool]
 	prompt = false
 	trustExitCode = true
 [core]
 	editor = vim
+	abbrev = 7
+[pretty]
+	fixes = Fixes: %h (\"%s\")
+

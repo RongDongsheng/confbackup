@@ -1,6 +1,7 @@
 " auto find ctags
 set tags=tags;
-" set autochdir
+" autochdir to enable git blame plugin for submodule
+set autochdir
 
 " map TlistToggle
 nnoremap <F3> :TlistToggle<CR>
@@ -14,7 +15,7 @@ set background=dark
 " solarized options
 let g:solarized_visibility = "high"
 let g:solarized_contrast = "high"
-colorscheme solarized
+" colorscheme solarized
 " let g:solarized_bold=0
 
 " relative line number
